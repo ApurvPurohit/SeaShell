@@ -4,21 +4,19 @@
 
 
 
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/ApurvPurohit/SeaShell">
+    <img src="images/logo.png" alt="SeaShell" width="150" height="150">
   </a>
-
-  <h3 align="center">Best-README-Template</h3>
+  <h1 align="center">SeaShell</h1>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!    
+    an interactive shell with signal handling capability    
     <br />    
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/ApurvPurohit/SeaShell/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/ApurvPurohit/SeaShell/issues">Request Feature</a>
   </p>
 </p>
 
@@ -90,17 +88,32 @@ Here's how you can contribute:
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/ApurvPurohit/SeaShell/blob/master/LICENSE) for more information.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+#### Ask me anything [here](https://github.com/ApurvPurohit/ApurvPurohit/issues).
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
+<div>
+  <i>Follow me around the web:</i><br /><br />
+ <a href="https://twitter.com/ApurvPurohit4">
+  <img align="center" alt="Apurv's Twitter" width="44px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg" />
+</a>&nbsp;
+<a href="https://linkedin.com/in/apurvpurohit">
+  <img align="center" alt="Apurv's LinkedIn" width="44px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
+</a>&nbsp;
+<a href="https://www.youtube.com/channel/UCcpgOFGEWepY6NGhYvB84Xw">
+  <img align="center" alt="Apurv's Discord" width="44px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/youtube.svg" />
+</a>&nbsp;
+<a href="https://open.spotify.com/user/31fofa5hdzi52zlrpcvijo6vqytq?si=001379f832b44f2f">
+  <img align="center" alt="Apurv's Spotify" width="44px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/spotify.svg" />
+</a>
+  
+ </div>
 
 
 <!-- ACKNOWLEDGEMENTS -->
