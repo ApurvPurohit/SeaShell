@@ -1,9 +1,9 @@
-[stars-shield]: https://img.shields.io/github/stars/ApurvPurohit/SeaShell.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/ApurvPurohit/SeaShell
 [stars-url]: https://github.com/ApurvPurohit/SeaShell/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ApurvPurohit/SeaShell.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/ApurvPurohit/SeaShell
 [issues-url]: https://github.com/ApurvPurohit/SeaShell/issues
-[license-shield]: https://img.shields.io/github/license/ApurvPurohit/SeaShell.svg?style=for-the-badge
-[license-url]: https://github.com/ApurvPurohit/SeaShell/blob/master/LICENSE
+[license-shield]: https://img.shields.io/github/license/ApurvPurohit/SeaShell
+[license-url]: https://img.shields.io/github/license/ApurvPurohit/SeaShell
 
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
