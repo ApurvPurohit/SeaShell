@@ -107,9 +107,9 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 ## Acknowledgements
 * [Dr. Bruhadeshwar Bezawada](https://scholar.google.co.in/citations?user=BvG80WkAAAAJ&hl=en)
 
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/ApurvPurohit/SeaShell.svg?style=for-the-badge
 [stars-url]: https://github.com/ApurvPurohit/SeaShell/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/ApurvPurohit/SeaShell.svg?style=for-the-badge
 [issues-url]: https://github.com/ApurvPurohit/SeaShell/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/ApurvPurohit/SeaShell.svg?style=for-the-badge
 [license-url]: https://github.com/ApurvPurohit/SeaShell/blob/master/LICENSE
