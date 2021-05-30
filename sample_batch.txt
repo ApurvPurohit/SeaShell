@@ -1,0 +1,10 @@
+echo THIS IS A SAMPLE BATCH FILE
+ls -al
+touch temp.c
+cp SeaShell.c temp.c
+wc temp.c
+touch newfile.c
+ping www.google.com
+cp temp.c newfile.c
+diff temp.c newfile.c
+rm temp.c

@@ -1,4 +1,4 @@
 all: SeaShell.c		
 	gcc -o SeaShell SeaShell.c	
-clean:	
+clean: SeaShell	
 	rm -f SeaShell
