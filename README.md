@@ -1,3 +1,10 @@
+[stars-shield]: https://img.shields.io/github/stars/ApurvPurohit/SeaShell.svg?style=for-the-badge
+[stars-url]: https://github.com/ApurvPurohit/SeaShell/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ApurvPurohit/SeaShell.svg?style=for-the-badge
+[issues-url]: https://github.com/ApurvPurohit/SeaShell/issues
+[license-shield]: https://img.shields.io/github/license/ApurvPurohit/SeaShell.svg?style=for-the-badge
+[license-url]: https://github.com/ApurvPurohit/SeaShell/blob/master/LICENSE
+
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
@@ -99,18 +106,12 @@ Distributed under the MIT License. See [LICENSE](https://github.com/ApurvPurohit
 
 
 <div>
-  <i>Follow me around the web:</i><br /><br />
+  <i>Follow me around the web:</i><br />
  <a href="https://twitter.com/ApurvPurohit4">
   <img align="center" alt="Apurv's Twitter" width="44px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg" />
 </a>&nbsp;
 <a href="https://linkedin.com/in/apurvpurohit">
   <img align="center" alt="Apurv's LinkedIn" width="44px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
-</a>&nbsp;
-<a href="https://www.youtube.com/channel/UCcpgOFGEWepY6NGhYvB84Xw">
-  <img align="center" alt="Apurv's Discord" width="44px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/youtube.svg" />
-</a>&nbsp;
-<a href="https://open.spotify.com/user/31fofa5hdzi52zlrpcvijo6vqytq?si=001379f832b44f2f">
-  <img align="center" alt="Apurv's Spotify" width="44px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/spotify.svg" />
 </a>
   
  </div>
@@ -119,10 +120,3 @@ Distributed under the MIT License. See [LICENSE](https://github.com/ApurvPurohit
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Dr. Bruhadeshwar Bezawada](https://scholar.google.co.in/citations?user=BvG80WkAAAAJ&hl=en)
-
-[stars-shield]: https://img.shields.io/github/stars/ApurvPurohit/SeaShell.svg?style=for-the-badge
-[stars-url]: https://github.com/ApurvPurohit/SeaShell/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ApurvPurohit/SeaShell.svg?style=for-the-badge
-[issues-url]: https://github.com/ApurvPurohit/SeaShell/issues
-[license-shield]: https://img.shields.io/github/license/ApurvPurohit/SeaShell.svg?style=for-the-badge
-[license-url]: https://github.com/ApurvPurohit/SeaShell/blob/master/LICENSE
