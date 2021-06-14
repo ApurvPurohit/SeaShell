@@ -37,7 +37,7 @@
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contribute">Contribute</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -49,7 +49,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-SeaShell is a custom unix-type shell written in C. This is an attempt to emulate basic Bash specifications like batch-processing(shell scripts), piping, I/O redirection etc. Read more about Bash [here](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
+SeaShell is a custom Unix-type shell written in C. It emulates basic Bash specifications like batch-processing(shell scripts), piping, I/O redirection, etc and the history feature inspired from ***ksh*** and ***csh***. Read more about Bash [here](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
 
 <!-- FEATURES -->
 ## Features
@@ -153,12 +153,12 @@ E.g., `>./SeaShell`
 <!-- HOW TO RUN -->
 ## Usage
 
-* Clone the Project
-* Run the Makefile in Project directory (`make`)
-* Run the terminating command _STOP_ to exit SeaShell (`STOP`)
+* Clone the project and `cd` to repo root.
+* Run the Makefile(`make`).
+* Run the executable with/without batch file arguments (`./SeaShell`).
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contribute
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 Here's how you can contribute:
