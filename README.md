@@ -49,7 +49,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-SeaShell is a custom Unix-type shell written in C. It emulates basic Bash specifications like batch-processing(shell scripts), piping, I/O redirection, etc and the history feature inspired from ***ksh*** and ***csh***. Read more about Bash [here](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
+SeaShell is a custom Unix-type shell written in C. It emulates basic Bash specifications like batch-processing(shell scripts), piping, signal-handling, I/O redirection, etc and the history feature inspired from ***ksh*** and ***csh***. Read more about Bash [here](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
 
 <!-- FEATURES -->
 ## Features
@@ -68,7 +68,7 @@ E.g., `>./SeaShell`
 `<johndoe@loremipsum:~/newdir>`
 
 
-* ***Batch-processing of Commands: SeaShell Script***
+* ***Batch-processing of Commands: SeaShell Scripting***
 
 1. SeaShell supports processing of multiple batch files. They should be provided as space-seperated arguments while running the executable as: 
 
@@ -104,7 +104,7 @@ E.g., `>./SeaShell`
 (*All other commands are treated as system commands like ls, emacs, vi and so on.*)
 
 
-* ***Context-aware execution***
+* ***Context-specific Execution***
 
 1. **Foreground processes**: Executing any command normally(in the foreground) implies that SeaShell will wait for the process to complete and regain control when the process exits.
 
@@ -153,7 +153,7 @@ E.g., `>./SeaShell`
 <!-- HOW TO RUN -->
 ## Usage
 
-* Clone the project and `cd` to repo root.
+* Clone the repository and `cd` to repository root.
 * Run the Makefile(`make`).
 * Run the executable with/without batch file arguments (`./SeaShell`).
 
