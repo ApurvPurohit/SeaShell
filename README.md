@@ -19,7 +19,7 @@
   <h1 align="center">SeaShell</h1>
 
   <p align="center">
-    an interactive shell with signal handling capability    
+    A custom Bash written in C    
     <br />    
     <a href="https://github.com/ApurvPurohit/SeaShell/issues">Report Bug</a>
     ·
@@ -49,145 +49,105 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Creating an interactive shell with signal handling capability
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+SeaShell is a custom unix-type shell written in C. This is an attempt to emulate basic Bash specifications like batch-processing(shell scripts), piping, I/O redirection etc. Read more about Bash [here](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
 
 <!-- FEATURES -->
-### Features
-The following commands should be supported.
-
-1.  When the user types command "HISTORY BRIEF", the program should list out all the commands (no need for file names) that were executed so far without the respective arguments. The display should show one command per line.
-
-2. When the user types command "HISTORY FULL", the program should list all the commands so far with their respective arguments. Each command should have an INDEX number associated with it and it should be displayed as well.
-
-3. If the user types "EXEC <COMMAND_NAME>", your program should execute that command with its arguments.
-
-4. When  If the user types "EXEC <COMMAND_INDEX_NUMBER>", your program should execute that command with its arguments.
-
-5. The program should exit when the user types a special command "STOP".
-
-6. The program should handle following border conditions:
-a. At least one file name should be supplied when the program starts.
-b. For unrecognized commands (not in history), the program should type appropriate message.
-c. Avoid memory leaks and segmentation faults. Don't allocate memory where not required and as far as possible free memory.
-
-<user@iitjammu>./a.out <file-name1> <file-name2>
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* In this lab task, unix type shell which will read commands from the user and execute them appropriately. There are two types of commands that can be expected from the user : a user-defined command and a system-command. The following are the specifications for the project. For each of the requirement the appropriate example is given along with it.
-
-Specification -1 : Display requirement
-
-When you execute your code a shell prompt of the following form must appear:
-
-<username@system_name:curr_dir>.
-
-E.g., <daksh@iitjammu:~>
-
-The directory from which the shell is invoked will be the home directory of the shell and should be indicated by "~"
-
-If the user executes "cd" change dir then the corresponding change must be reflected in the shell as well.
-
-E.g., ./a.out
-<daksh@iitjammu:~>cd newdir
-<daksh@iitjammu:~/newdir>
-
-Specification -2 :  User-defined commands
-
-The following commands must be supported by the shell
--pid : prints the process id of your shell program
-
-E.g., 
-<daksh@iitjammu:~>pid
-command name: ./a.out  process id: 234
-
--pid current : prints the list of the process ids of the processes that are created by the shell and currently active
-<daksh@iitjammu:~>pid current
-List of currently executing processes spawned from this shell:
-command name: emacs   process id: 235
-command name: xbiff   process id: 448
-command name: xcalc   process id: 459
-
--pid all : prints the list of process ids of all commands that were executed so far by the shell (including the currently executing processes)
-
-E.g.,
-<daksh@iitjammu:~>pid current
-List of all processes spawned from this shell:
-command name: ls      process id : 112
-command name: cd      process id : 124
-command name: emacs   process id : 235
-command name: xbiff   process id : 448
-command name: xcalc   process id : 459
+## Features
 
 
+* ***Display***
 
--HISTN: list of last "N" commands executed by the shell. If the number of commands is less than "n" then the shell should print only the available number of commands. 
+Display Format: `<username@system_name:curr_dir>`
 
-E.g.,
-<daksh@iitjammu:~>HIST5 (Say print last 5 commands assuming the above history of commands)
+The directory from which SeaShell is invoked is the home directory, indicated by `~`. If the user executes `cd` (change dir), the corresponding change is reflected in SeaShell as well.
 
-1. emacs
-2. xbiff
-3. xcalc
-4. vi
-5. ps
+E.g., `>./SeaShell`
 
+`<johndoe@loremipsum:~>cd newdir`
 
--!HISTN : execute history command number "n" (assuming the first command is numbered 1)
-
-E.g.,
-<daksh@iitjammu:~>!HIST4 (assuming above history of commands)
-vi
+`<johndoe@loremipsum:~/newdir>`
 
 
--Allowed to retain existing support for EXEC, HISTORY FULL, HISTORY BRIEF
+* ***Batch-processing of Commands: SeaShell Script***
+
+1. SeaShell supports processing of multiple batch files. They should be provided as space-seperated arguments while running the executable as: 
+
+  `./SeaShell <file-name1> <file-name2>`
+
+2. After processing of batch files (if supplied), SeaShell goes to a post-processing interactive mode, similar to a unix-type shell.
+
+3. The batch file can contain user-defined as well as generic unix system commands. [Sample Batch File](https://github.com/ApurvPurohit/SeaShell/blob/master/sample_batch.txt)
+ 
+
+* ***User-defined Commands***
+  
+1. `HISTORY BRIEF` - Lists out all the commands that were executed so far without the respective arguments, one command per line.
+
+2. `HISTORY FULL` - Lists out all the commands so far with their respective arguments. Each command has an INDEX number associated with it and it is displayed as well.
+  
+3. `HISTN` - Lists last "N" commands executed by the shell. If the number of commands is less than "N", then SeaShell prints only the available number of commands. 
+
+4. `!HISTN` - Executes HISTORY command number "N" (assuming 1-indexing).
+
+5. `EXEC <COMMAND_NAME>` - Executes the user supplied command with its arguments.
+
+6. `EXEC <COMMAND_INDEX_NUMBER>` - Executes the command at user supplied index in HISTORY with its arguments.
+
+7. `STOP` - Terminates SeaShell.
+
+8. `pid` - Prints the process id of the SeaShell process.
+
+9. `pid current` - Lists the process ids of the processes that were created by SeaShell and are currently active.
+
+10. `pid all` - Lists the process ids of all commands that were executed so far by the shell (including the currently executing processes).
+
+(*All other commands are treated as system commands like ls, emacs, vi and so on.*)
 
 
-Specification 4: System commands with and without arguments
+* ***Context-aware execution***
 
-All other commands are treated as system commands like : ls, emacs, vi and so on. The shell must be able to execute them either in the backgroud or in the foreground.
+1. **Foreground processes**: Executing any command normally(in the foreground) implies that SeaShell will wait for the process to complete and regain control when the process exits.
 
---Foreground processes: For example, executing a "vi" command in the foreground implies that your shell will wait for this process to complete and regain control when this process exits.
+2. **Background processes**: Any command invoked with a `&` argument is treated as a background command. This implies that SeaShell will spawn the process and proceed(won't wait for the process to exit). When the background process exits, an appropriate indication message is shown to the user.
 
---Background processes: Any command invoked with "&" is treated as background command. This implies that your shell will spawn that process and doesn't wait for the process to exit. It will keep taking user commands. If the background process  exits then the shell must display the appropriate message to the user.
 
-Specification -1 : Output redirection with ">"
+* ***I/O Redirection***
 
-<daksh@iitjammu:~>wc temp.c > output.txt
-<daksh@iitjammu:~>cat output.txt
-xx xx xx
-<daksh@iitjammu:~>
+1. Output redirection with `>`
 
-Specification -2 : Input redirection with "<"
+`<johndoe@loremipsum:~>wc temp.c > output.txt`
 
-<daksh@iitjammu:~>wc < temp.c 
-xx xx xx
+`<johndoe@loremipsum:~>cat output.txt`
 
-Specification -3 : Input/Output redirection with "<" ">"
+`xx xx xx`
 
-<daksh@iitjammu:~>wc < temp.c > output.txt
-<daksh@iitjammu:~>cat output.txt
-xx xx xx
+2. Input redirection with `<`
 
-Specification -4: Redirection with pipes (multiple pipes should be supported
+`<johndoe@loremipsum:~>wc < temp.c`
 
-<daksh@iitjammu:~>cat temp.c | wc
-xx xx xx
+`xx xx xx`
 
-Specification -5: Redirection with pipes and ">"
+3. Input/Output redirection with `<`, `>`
 
-<daksh@iitjammu:~>cat temp.c | wc | output.txt
-<daksh@iitjammu:~>cat output.txt
-xx xx xx
+`<johndoe@loremipsum:~>wc < temp.c > output.txt`
+
+`<johndoe@loremipsum:~>cat output.txt`
+
+`xx xx xx`
+
+4. Redirection with pipes (multiple pipes supported)
+
+`<johndoe@loremipsum:~>cat temp.c | wc | output.txt`
+
+`xx xx xx`
+
+5. Redirection with pipes and `>`
+
+`<johndoe@loremipsum:~>temp.c | wc > output.txt`
+
+`<johndoe@loremipsum:~>cat output.txt`
+
+`xx xx xx`
 
 
 <!-- HOW TO RUN -->
