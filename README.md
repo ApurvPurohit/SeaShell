@@ -55,7 +55,7 @@ SeaShell is a custom Unix-type shell written in C. It emulates basic Bash specif
 ## Features
 
 
-* ***Display***
+### ***Display***
 
 Display Format: `<username@system_name:curr_dir>`
 
@@ -68,7 +68,7 @@ E.g., `>./SeaShell`
 `<johndoe@loremipsum:~/newdir>`
 
 
-* ***Batch-processing of Commands: SeaShell Scripting***
+### ***Batch-processing of Commands: SeaShell Scripting***
 
 1. SeaShell supports processing of multiple batch files. They should be provided as space-seperated arguments while running the executable as: 
 
@@ -79,7 +79,7 @@ E.g., `>./SeaShell`
 3. The batch file can contain user-defined as well as generic unix system commands. [Sample Batch File](https://github.com/ApurvPurohit/SeaShell/blob/master/sample_batch.txt)
  
 
-* ***User-defined Commands***
+### ***User-defined Commands***
   
 1. `HISTORY BRIEF` - Lists out all the commands that were executed so far without the respective arguments, one command per line.
 
@@ -104,14 +104,14 @@ E.g., `>./SeaShell`
 (*All other commands are treated as system commands like ls, emacs, vi and so on.*)
 
 
-* ***Context-specific Execution***
+### ***Context-specific Execution***
 
 1. **Foreground processes**: Executing any command normally(in the foreground) implies that SeaShell will wait for the process to complete and regain control when the process exits.
 
 2. **Background processes**: Any command invoked with a `&` argument is treated as a background command. This implies that SeaShell will spawn the process and proceed(won't wait for the process to exit). When the background process exits, an appropriate indication message is shown to the user.
 
 
-* ***I/O Redirection***
+### ***I/O Redirection***
 
 1. Output redirection with `>`
 
