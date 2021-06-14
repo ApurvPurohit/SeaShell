@@ -85,7 +85,7 @@ E.g., `>./SeaShell`
 
 2. `HISTORY FULL` - Lists out all the commands so far with their respective arguments. Each command has an INDEX number associated with it and it is displayed as well.
   
-3. `HISTN` - Lists last "N" commands executed by the shell. If the number of commands is less than "N", then SeaShell prints only the available number of commands. 
+3. `HISTN` - Lists last "N" commands executed by SeaShell. If the number of commands is less than "N", it prints only the available number of commands. 
 
 4. `!HISTN` - Executes HISTORY command number "N" (assuming 1-indexing).
 
@@ -97,9 +97,9 @@ E.g., `>./SeaShell`
 
 8. `pid` - Prints the process id of the SeaShell process.
 
-9. `pid current` - Lists the process ids of the processes that were created by SeaShell and are currently active.
+9. `pid current` - Lists the process ids of the processes that were spawned by SeaShell and are currently active.
 
-10. `pid all` - Lists the process ids of all commands that were executed so far by the shell (including the currently executing processes).
+10. `pid all` - Lists the process ids of all commands that were executed so far by SeaShell (including the currently executing processes).
 
 (*All other commands are treated as system commands like ls, emacs, vi and so on.*)
 
